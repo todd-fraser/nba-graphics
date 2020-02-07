@@ -1,0 +1,37 @@
+
+//AM daily setup script
+
+•WIPE yesterday's variables
+•PULL schedule JSON, check for home or away play using nickname 
+    IF NO
+    - WriteOut playToday to FALSE
+
+    IF YES 
+    - WRITE playToday to TRUE
+    - SET isHome true/false
+    - GET Game ID 
+    - PULL boxscore JSON using ID
+        - Use home/away start time to write out todayTip
+        - Render coming up graphic
+            - write HTML
+            - puppeteer screenshot
+            - email graphic
+
+
+
+
+
+//Every 1-5 min periodic script
+
+
+
+
+persistent variables
+
+playToday
+nickname?
+isHomeTeam
+todayTip
+
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="score.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="city" id="visitorCity"></div>
+    <div class="scoreBar visitor nickname" id="visitor"></div>
+    <div class="scoreBar visitor score" id="visitorScore"></div>
+    <div class="city" id="homeCity"></div>
+    <div class="scoreBar home nickname" id="home"></div>
+    <div class="scoreBar home score" id="homeScore"></div>
+    <div id="clock"></div>
+    <div id="periodStatus"></div>
+    <div class="scoreShade" id="visitorScoreShade"></div>
+    <div class="scoreShade" id="homeScoreShade"></div>
+
+    <script>
+        fetch('today.json')
+        .then((res) => res.json())
+        .then((today) => {
+
+        document.getElementById('periodStatus').innerText = today.tipString;
+       
+        document.getElementById('visitorCity').innerText = today.visitorCity;
+        document.getElementById('visitor').innerText = today.visitor;
+
+        document.getElementById('homeCity').innerText = today.homeCity;
+        document.getElementById('home').innerText = today.home;
+
+            if (today.visitorScore) {
+                document.getElementById('visitorScore').innerText = today.visitorScore;
+                document.getElementById('homeScore').innerText = today.homeScore;
+            } else {
+                document.querySelectorAll('.scoreShade').forEach(element => {
+                element.style.opacity = 0;
+            })
+            }
+
+        })
+    </script>
+
+</body>
+
+</html>

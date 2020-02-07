@@ -1,0 +1,16 @@
+{
+  "name": "nba-graphics",
+  "version": "1.0.0",
+  "description": "creates postgame scores and stats graphics using feed data and puppeteer for screenshots",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Todd Fraser",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "puppeteer": "^2.0.0",
+    "request": "^2.88.0"
+  }
+}

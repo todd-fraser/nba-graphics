@@ -1,0 +1,111 @@
+body {
+    background-image: url("./images/full_screen_score.jpg");
+    background-repeat: no-repeat;
+    color: white;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* float: left; */
+}
+
+#periodStatus{
+    position: absolute; 
+    top: 43px;
+    left: 162px;
+    font-size: 51px;
+    font-weight: 700;
+}
+
+.city {
+    position: absolute; 
+    left: 235px; 
+    font-size: 33px;
+    height: 50px;
+    background: #333;
+    /* opacity: 70%; */
+    line-height: 50px;
+    padding: 0 10px 0 11px;
+    width: 400px;
+}
+
+#visitorCity {
+    top: 180px; 
+}
+
+#homeCity {
+    top: 370px; 
+}
+
+.scoreBar {
+    /* margin: 0 80px 0 58px; */
+    font-size: 84px;
+    letter-spacing: -4px;
+    left: 220px;
+}
+
+.nickname{
+    font-weight: 600;
+    position: absolute;
+}
+
+.visitor {
+    top: 225px; 
+}
+
+.home {
+    top: 417px; 
+}
+
+.score.visitor {
+    text-align: right;
+    font-weight: 700;
+    margin-top: 225px;
+    margin-right: 250px;
+    letter-spacing: 0px;
+}
+
+.score.home {
+    text-align: right;
+    font-weight: 700;
+    margin-top: 77px;
+    margin-right: 250px;
+    letter-spacing: 0px;
+}
+
+
+
+div.scoreShade {
+    background: #000;
+    opacity: 15%;
+    position: absolute;
+    width: 180px;
+    height: 110px;
+    z-index: -1;
+}
+
+#visitorScoreShade {
+    left: 870px;
+    top: 230px;
+}
+
+#homeScoreShade {
+    left: 870px;
+    top: 420px;
+}
+
+
+
+
+td {
+    padding: .3em;
+}
+
+.boxLabelRow {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.tableTeamName {
+    font-weight: 600;
+}

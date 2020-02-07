@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+
+<fcpxml version="1.6">
+    <resources>
+        <format id="r1" name="FFVideoFormat720p2997" frameDuration="1001/30000s" width="1280" height="720"/>
+        <effect id="r2" name="Lower Third - 2015" uid="~/Generators.localized/_TEMPLATE/NewsOK/Lower Third - 2015/Lower Third - 2015.motn" src="file:///Users/tfraser/Movies/Motion%20Templates.localized/Generators.localized/_TEMPLATE/NewsOK/Lower%20Third%20-%202015/Lower%20Third%20-%202015.motn"/>
+    </resources>
+    <library location="file:///Users/tfraser/Downloads/Thunder%20XML%20Template/Thunder%20XML%20automation%20template.fcpbundle/">
+        <event name="1-28-20" uid="016E45C1-FDF6-42E0-9E47-B756470D8D85">
+            <project name="Chris_Paul" uid="D08BE1A0-73F3-4CBF-9F40-A9AA4E29FC0B" modDate="2020-01-28 13:35:39 -0600">
+                <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                    <spine>
+                        <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
+                            <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                                <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                <param name="Text" key="9999/10223/10230/2/369" value="Chris Paul"/>
+                                <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                <param name="Text" key="9999/10223/10239/2/369" value="99 PTS, 55 REB, 22 AST"/>
+                            </video>
+                        </gap>
+                    </spine>
+                </sequence>
+            </project>
+            <project name="Dennis_Schroder" uid="5EAAE78E-0C58-40CF-B75F-9B4FE7E33C74" modDate="2020-01-28 13:35:34 -0600">
+                <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                    <spine>
+                        <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
+                            <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                                <param name="Position" key="9999/10223/10230/1/100/101" value="-536 -194"/>
+                                <param name="Text" key="9999/10223/10230/2/369" value="Dennis Schröder"/>
+                                <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                <param name="Text" key="9999/10223/10239/2/369" value="99 PTS, 55 REB, 22 AST"/>
+                            </video>
+                        </gap>
+                    </spine>
+                </sequence>
+            </project>
+            <project name="Danilo_Gallinari" uid="5EAAE78E-0C58-40CF-B75F-9B4FE7E33C78" modDate="2020-01-28 13:35:34 -0600">
+                <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                    <spine>
+                        <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
+                            <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                                <param name="Position" key="9999/10223/10230/1/100/101" value="-536 -194"/>
+                                <param name="Text" key="9999/10223/10230/2/369" value="Danilo Gallinari"/>
+                                <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                <param name="Text" key="9999/10223/10239/2/369" value="789 PTS, 535 REB, 232 AST"/>
+                            </video>
+                        </gap>
+                    </spine>
+                </sequence>
+            </project>
+        </event>
+    </library>
+</fcpxml>
