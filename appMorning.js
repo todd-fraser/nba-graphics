@@ -1,7 +1,6 @@
 const request = require('request');
 const fs = require('fs');
 
-
     // JSON Contents
     // "date": "20200205",
     // "myTeam": "Thunder",
@@ -13,15 +12,16 @@ const fs = require('fs');
     // "tipString": "7:00 PM"
     
 // Get CONFIG
-let data = fs.readFileSync('./output/today.json');
-const today = JSON.parse(data);
+let data = fs.readFileSync('./output/config.json');
+const config = JSON.parse(data);
+const today = {}
 
-today.visitorScore = ""
-today.homeScore = ""
-today.clock = ""
+today.myTeam = config.myTeam
+
 
 //set today to today
 today.date = new Date().toISOString().slice(0,10).replace(/-/g,""); 
+today.date = 20200213 //DEV override the date
 
 let feedURL = `http://data.nba.net/5s/json/cms/noseason/scoreboard/${today.date}/games.json`
 // let feedURL = `http://127.0.0.1:5500/downloadedJSON/${today.date}_schedule.json`
@@ -34,24 +34,34 @@ request(feedURL, (error, response, html) => {
         let data = JSON.parse(html)
         console.log(`JSON downloaded from NBA`);
         // saveLocalJSON(html, "schedule")
+        console.log(`${Object.entries(data.sports_content.games.game).length} games today`)
 
-        console.log(`looking for ${today.myTeam} games`);
-        for (let i = 0; i <= Object.entries(data.sports_content.games.game).length-1; i++) {
-            if (data.sports_content.games.game[i].home.nickname === today.myTeam || data.sports_content.games.game[i].visitor.nickname === today.myTeam) {
-                console.log(`\n#### GAME Today for the ${today.myTeam}\n`);
-                today.playToday = true;
-                game = data.sports_content.games.game[i]
-                today.gameId = game.id
-                if (game.home.nickname === today.myTeam){
-                    setHomeGame();
+        // Check if ANY games are being played today
+        if ( Object.entries(data.sports_content.games.game).length > 0 ){  
+            console.log(`looking for ${today.myTeam} games`);
+            // Loop through games being played today
+            for (let i = 0; i <= Object.entries(data.sports_content.games.game).length-1; i++) {  //
+                if (data.sports_content.games.game[i].home.nickname === today.myTeam || data.sports_content.games.game[i].visitor.nickname === today.myTeam) {
+                    console.log(`\n#### GAME Today for the ${today.myTeam}\n`);
+                    today.playToday = true;
+                    game = data.sports_content.games.game[i]
+                    today.gameId = game.id
+                    if (game.home.nickname === today.myTeam){
+                        setHomeGame();
+                    } else {
+                        setVisitorGame();
+                    }
+                    break;
                 } else {
-                    setVisitorGame();
+                    console.log(`Game checked, not the ${config.myTeam}`)
+                    today.playToday = false;
                 }
-                break;
-            } else {
-                today.playToday = false;
-            }
-        };
+            };
+
+        } else {
+            console.log(`No games today`)
+            today.playToday = false
+        }        
     }
 
     // Write CONFIG back to file

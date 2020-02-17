@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+
+<fcpxml version="1.6">
+    <resources>
+        <format id="r1" name="FFVideoFormat720p2997" frameDuration="1001/30000s" width="1280" height="720"/>
+        <effect id="r2" name="Lower Third - 2015" uid="~/Generators.localized/_TEMPLATE/NewsOK/Lower Third - 2015/Lower Third - 2015.motn" src="file:///Users/tfraser/Movies/Motion%20Templates.localized/Generators.localized/_TEMPLATE/NewsOK/Lower%20Third%20-%202015/Lower%20Third%20-%202015.motn"/>
+    </resources>
+    <library location="file:///Users/tfraser/Downloads/Thunder%20XML%20Template/Thunder%20XML%20automation%20template.fcpbundle/">
+        <event name="20200213" uid="016E45C1-FDF6-42E0-9E47-0021900819">
+            
+                <project name="1610612760_Shai_Gilgeous-Alexander" uid="D08BE1A0-73F3-4CBF-9F40-1628983" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Shai Gilgeous-Alexander"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="17 PTS, 3 REB, 7 AST, 1 STL   6/14 FG  2/6 3PT"/>
+                                </video>
+                            </gap>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="1610612760_Danilo_Gallinari" uid="D08BE1A0-73F3-4CBF-9F40-201568" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Danilo Gallinari"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="29 PTS, 2 REB, 1 AST, 2 STL   12/18 FG  3/5 3PT"/>
+                                </video>
+                            </gap>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="1610612760_Steven_Adams" uid="D08BE1A0-73F3-4CBF-9F40-203500" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Steven Adams"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="11 PTS, 11 REB, 2 AST, 1 STL, 3 BLK   5/10 FG  1/1 3PT"/>
+                                </video>
+                            </gap>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="1610612760_Luguentz_Dort" uid="D08BE1A0-73F3-4CBF-9F40-1629652" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Luguentz Dort"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="7 PTS, 3 REB, 1 STL   2/5 FG  1/3 3PT"/>
+                                </video>
+                            </gap>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="1610612760_Chris_Paul" uid="D08BE1A0-73F3-4CBF-9F40-101108" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Chris Paul"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="14 PTS, 8 REB, 12 AST, 2 STL   5/12 FG  2/3 3PT"/>
+                                </video>
+                            </gap>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="1610612760_Nerlens_Noel" uid="D08BE1A0-73F3-4CBF-9F40-203457" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Nerlens Noel"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="2 PTS, 3 REB   1/4 FG"/>
+                                </video>
+                            </gap>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="1610612760_Dennis_Schroder" uid="D08BE1A0-73F3-4CBF-9F40-203471" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Dennis Schroder"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="22 PTS, 3 REB, 3 AST, 1 STL   7/16 FG  1/4 3PT"/>
+                                </video>
+                            </gap>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="1610612760_Terrance_Ferguson" uid="D08BE1A0-73F3-4CBF-9F40-1628390" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Terrance Ferguson"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="3 PTS, 1 REB, 2 AST, 1 STL   1/2 FG  1/2 3PT"/>
+                                </video>
+                            </gap>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="1610612760_Abdel_Nader" uid="D08BE1A0-73F3-4CBF-9F40-1627846" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Abdel Nader"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="8 PTS, 4 REB, 1 AST, 2 STL   3/7 FG  0/1 3PT"/>
+                                </video>
+                            </gap>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="1610612760_Mike_Muscala" uid="D08BE1A0-73F3-4CBF-9F40-203488" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Mike Muscala"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="10 PTS, 2 REB, 2 BLK   4/4 FG  2/2 3PT"/>
+                                </video>
+                            </gap>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="1610612740_Josh_Hart" uid="D08BE1A0-73F3-4CBF-9F40-1628404" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Josh Hart"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="7 PTS, 8 REB, 3 AST   1/4 FG  1/4 3PT"/>
+                                </video>
+                            </gap>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="1610612740_Zion_Williamson" uid="D08BE1A0-73F3-4CBF-9F40-1629627" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Zion Williamson"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="32 PTS, 6 REB, 1 AST, 1 BLK   11/19 FG  0/1 3PT"/>
+                                </video>
+                            </gap>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="1610612740_Derrick_Favors" uid="D08BE1A0-73F3-4CBF-9F40-202324" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Derrick Favors"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="8 PTS, 9 REB, 2 AST   4/8 FG"/>
+                                </video>
+                            </gap>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="1610612740_Jrue_Holiday" uid="D08BE1A0-73F3-4CBF-9F40-201950" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Jrue Holiday"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="14 PTS, 6 REB, 11 AST   6/13 FG  1/3 3PT"/>
+                                </video>
+                            </gap>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="1610612740_Lonzo_Ball" uid="D08BE1A0-73F3-4CBF-9F40-1628366" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Lonzo Ball"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="16 PTS, 6 REB, 5 AST, 2 BLK   5/9 FG  5/8 3PT"/>
+                                </video>
+                            </gap>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="1610612740_JJ_Redick" uid="D08BE1A0-73F3-4CBF-9F40-200755" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="JJ Redick"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="24 PTS, 2 REB, 3 AST, 2 STL   8/19 FG  4/11 3PT"/>
+                                </video>
+                            </gap>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="1610612740_Jaxson_Hayes" uid="D08BE1A0-73F3-4CBF-9F40-1629637" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Jaxson Hayes"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="4 PTS, 2 REB, 3 AST   2/2 FG"/>
+                                </video>
+                            </gap>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="1610612740_E'Twaun_Moore" uid="D08BE1A0-73F3-4CBF-9F40-202734" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="E'Twaun Moore"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="2 PTS, 4 REB, 2 AST, 1 STL, 1 BLK   1/2 FG  0/1 3PT"/>
+                                </video>
+                            </gap>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="1610612740_Nicolo_Melli" uid="D08BE1A0-73F3-4CBF-9F40-1629740" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Nicolo Melli"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="6 PTS, 3 REB, 3 BLK   2/7 FG  2/5 3PT"/>
+                                </video>
+                            </gap>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="1610612740_Frank_Jackson" uid="D08BE1A0-73F3-4CBF-9F40-1628402" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Frank Jackson"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="5 PTS, 1 AST   2/3 FG  1/2 3PT"/>
+                                </video>
+                            </gap>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="1610612740_Brandon_Ingram" uid="D08BE1A0-73F3-4CBF-9F40-1627742" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Brandon Ingram"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value=""/>
+                                </video>
+                            </gap>
+                        </spine>
+                    </sequence>
+                </project>
+    
+    </event>
+    </library>
+    </fcpxml>
