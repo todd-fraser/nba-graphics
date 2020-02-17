@@ -1,6 +1,9 @@
 const request = require('request');
 const fs = require('fs');
 const moment = require('moment');
+const nodemailer = require("nodemailer");
+
+require('dotenv').config();
 
 // Get TODAY CONFIG
 let data = fs.readFileSync('./output/today.json');
@@ -57,6 +60,44 @@ function getBoxscore() {
             today.gameProcessed = true
             data = JSON.stringify(today, null, 2);  //writes pretty JSON (, null, 2)
             fs.writeFile('./output/today.json', data, finished);
+
+            async function mailer() {
+                
+                let xmlPath = `./output/FCPXML/${today.date}.fcpxml`
+                console.log(`########## XML Path = ${xmlPath}`)
+                // create reusable transporter object using the default SMTP transport
+                let transporter = nodemailer.createTransport({
+                  host: "smtp.gmail.com",
+                  port: 465,
+                  secure: true,
+                  auth: {
+                    user: process.env.SMTP_USER,
+                    pass: process.env.SMTP_PASS
+                  }
+                });
+              
+                // send mail with defined transport object
+                let info = await transporter.sendMail({
+                  from: '"Hub Bot" <ghweathergraphics@gmail.com', // sender address
+                  to: "tfraser@oklahoman.com", // list of receivers
+                  subject: "NBA Graphics FCP XML", // Subject line
+                  text: "FCP Graphics for tonight's Game", // plain text body
+                  html: "<div><b>FCP Graphics for tonight's Game</b></div>", // html body
+                  attachments: [
+                      {
+                          filename: 'FCPXML.fcpxml',
+                          path: xmlPath
+                      }
+                  ]
+                });
+              
+                console.log("Message sent: %s", info.messageId);
+                // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+              
+              }
+              
+              mailer().catch(console.error);
+
             function finished(err) {
                 console.log(`Today JSON writen to file`);
             }
