@@ -64,7 +64,7 @@ function getBoxscore() {
             async function mailer() {
                 
                 let xmlPath = `./output/FCPXML/${today.date}.fcpxml`
-                console.log(`########## XML Path = ${xmlPath}`)
+                let attachmentName = `${today.visitor}_(${today.visitorScore})_at_${today.home}_(${today.homeScore})`
                 // create reusable transporter object using the default SMTP transport
                 let transporter = nodemailer.createTransport({
                   host: "smtp.gmail.com",
@@ -80,7 +80,7 @@ function getBoxscore() {
                 let info = await transporter.sendMail({
                   from: '"Hub Bot" <ghweathergraphics@gmail.com', // sender address
                   to: "tfraser@oklahoman.com", // list of receivers
-                  subject: "NBA Graphics FCP XML", // Subject line
+                  subject: process.env.SUBJECT, // Subject line
                   text: "FCP Graphics for tonight's Game", // plain text body
                   html: "<div><b>FCP Graphics for tonight's Game</b></div>", // html body
                   attachments: [
