@@ -18,11 +18,22 @@
 
 
 
-const moment = require('moment');
+// const moment = require('moment');
 
-let localTime = `${moment().hours()}${moment().minutes()}`
+// let localTime = `${moment().hours()}${moment().minutes()}`
 
 
 
-console.log(moment().toString());
-console.log(`${moment().hours()}${moment().minutes()}`);
+// console.log(moment().toString());
+// console.log(`${moment().hours()}${moment().minutes()}`);
+
+
+let a = 1
+let b = 2
+let c = 3
+
+if ( a == 1 && b == 2 && c == 3 ){
+    console.log("all look equal")
+} else {
+    console.log(`someting isn't right`)
+}

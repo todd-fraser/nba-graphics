@@ -10,14 +10,8 @@ const today = JSON.parse(data);
 
 let hoursNow = parseInt(moment().hours());  //get time in hh format to match tip time
 
-// console.log(`The hour is now: ${hoursNow}`);
 
-// console.group(`today.tip: ${today.tip}`);
-
-// console.log(`(today.tip+200)/100: ${(today.tip+200)/100}`);
-
-
-if (today.playToday && (today.tip+200)/100 < hoursNow) {
+if (today.playToday && (today.tip+200)/100 < hoursNow  && today.gameProcessed != true) {
     console.log(`It's at least two hours after tip, pulling boxscore`);
     getBoxscore();
 } else if (today.playToday && (today.tip+200)/100 > hoursNow) {
@@ -25,7 +19,6 @@ if (today.playToday && (today.tip+200)/100 < hoursNow) {
 } else if (!today.playToday) {
     console.log('They do not play today');
 }
-
 
 
 
@@ -61,6 +54,7 @@ function getBoxscore() {
             }
 
             // Write CONFIG back to file
+            today.gameProcessed = true
             data = JSON.stringify(today, null, 2);  //writes pretty JSON (, null, 2)
             fs.writeFile('./output/today.json', data, finished);
             function finished(err) {

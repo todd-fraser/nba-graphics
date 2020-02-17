@@ -17,6 +17,7 @@ const config = JSON.parse(data);
 const today = {}
 
 today.myTeam = config.myTeam
+today.gameProcessed = false
 
 
 //set today to today
