@@ -5,7 +5,7 @@ const nodemailer = require("nodemailer");
 
 require('dotenv').config();
 
-// Get TODAY CONFIG
+// Get TODAY JSON
 let data = fs.readFileSync('./output/today.json');
 const today = JSON.parse(data);
 
@@ -13,15 +13,20 @@ const today = JSON.parse(data);
 
 let hoursNow = parseInt(moment().hours());  //get time in hh format to match tip time
 
+// ### probable way to remove moment dependency
+// var date = new Date(); //Get current time
+// var hour = date.getHours(); //Get current hour - returns two digit hour
+
 
 if (today.playToday && (today.tip+200)/100 < hoursNow  && today.gameProcessed != true) {
     console.log(`It's at least two hours after tip, pulling boxscore`);
     getBoxscore();
 } else if (today.playToday && (today.tip+200)/100 > hoursNow) {
-    console.log('The game probably is not over yet');
+    console.log(`### ${today.myTeam} GAME TODAY, but the it's probably is not over yet`);
 } else if (!today.playToday) {
-    console.log('They do not play today');
+    // console.log(`### ${today.myTeam} do not play today`);
 }
+
 
 
 
@@ -78,7 +83,7 @@ function getBoxscore() {
               
                 // send mail with defined transport object
                 let info = await transporter.sendMail({
-                  from: '"Hub Bot" <ghweathergraphics@gmail.com', // sender address
+                  from: '"HubBot" <ghweathergraphics@gmail.com', // sender address
                   to: "tfraser@oklahoman.com", // list of receivers
                   subject: process.env.SUBJECT, // Subject line
                   text: "FCP Graphics for tonight's Game", // plain text body

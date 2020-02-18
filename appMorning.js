@@ -1,14 +1,18 @@
 const request = require('request');
 const fs = require('fs');
 
-    // JSON Contents
-    // "date": "20200205",
+    // JSON Contents Example
     // "myTeam": "Thunder",
+    // "gameProcessed": false,
+    // "date": 20200213,
     // "playToday": true,
-    // "gameId": "0021900760",
-    // "isHomeTeam": true,
-    // "opponent": "Cavaliers",
-    // "tip": 1900,
+    // "gameId": "0021900819",
+    // "isHomeTeam": false,
+    // "home": "Pelicans",
+    // "homeCity": "New Orleans",
+    // "visitor": "Thunder",
+    // "visitorCity": "Oklahoma City",
+    // "tip": 1400,
     // "tipString": "7:00 PM"
     
 // Get CONFIG
