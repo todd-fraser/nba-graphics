@@ -1,11 +1,9 @@
-// var date = new Date(); //Get current time
-// var hour = date.getHours(); //Get current hour
+const request = require("request");
+const fs = require("fs");
 
-// console.log(hour)
+let gameData = fs.readFileSync("./output/today.json");
+const today = JSON.parse(gameData);
+let configData = fs.readFileSync("./output/config.json");
+const config = JSON.parse(configData);
 
-
-const moment = require('moment');
-
-let hoursNow = moment().hours();  //get time in hh format to match tip time
-
-console.log(hoursNow)
+console.log(config.users)

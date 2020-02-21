@@ -4,326 +4,1938 @@
 <fcpxml version="1.6">
     <resources>
         <format id="r1" name="FFVideoFormat720p2997" frameDuration="1001/30000s" width="1280" height="720"/>
-        <effect id="r2" name="Lower Third - 2015" uid="~/Generators.localized/_TEMPLATE/NewsOK/Lower Third - 2015/Lower Third - 2015.motn" src="file:///Users/tfraser/Movies/Motion%20Templates.localized/Generators.localized/_TEMPLATE/NewsOK/Lower%20Third%20-%202015/Lower%20Third%20-%202015.motn"/>
+        <effect id="r2" name="Custom" uid=".../Generators.localized/Solids.localized/Custom.localized/Custom.motn"/>
+        <effect id="r3" name="Cross Dissolve" uid="FxPlug:4731E73A-8DAC-4113-9A30-AE85B1761265"/>
+        <effect id="r4" name="Audio Crossfade" uid="FFAudioTransition"/>
+        <asset id="r5" name="Thunder Intro 2015" uid="AF28B393523879DD583866BC628404E5" src="file:///Users/Shared/Intros/Thunder%20Intro%202015.mov" start="108108000/30000s" duration="240240/30000s" hasVideo="1" format="r1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9vazADAAAAAAQQMAAAAP+yXLVXCETPDxpZDCz3CD+Pr1CN7Wg58iYWM2lEWa1HIAIAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAHRmcmFzZXIACQAAAAEBAABEb2N1bWVudHMAAAALAAAAAQEAADIwMTUgSW50cm9zABYAAAABAQAAVGh1bmRlciBJbnRybyAyMDE1Lm1vdgAAFAAAAAEGAAAQAAAAIAAAADAAAABEAAAAWAAAAAgAAAAEAwAAsgAAAAAAAAAIAAAABAMAABLrLQAAAAAACAAAAAQDAAA+bS4AAAAAAAgAAAAEAwAAsLsuAAAAAAAIAAAABAMAACLKLgAAAAAAFAAAAAEGAACUAAAApAAAALQAAADEAAAA1AAAAAgAAAAABAAAQbwOBk4AAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAAAAAAAAAEAAAAAwMAAPclfV4IAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACwg7LoAAAACAAAAAAEAABBwXE4IgAAACQAAAABAQAAMTMyRjFCOEQtOUY2RC0zQjMzLUFERDktMkQ1NkFCMjM3RTVEGAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAAAQUAABoAAAABAQAATlNVUkxEb2N1bWVudElkZW50aWZpZXJLZXkAAAQAAAADAwAAoQcAANgAAAD+////AQAAAAAAAAARAAAABBAAAHgAAAAAAAAABRAAAOQAAAAAAAAAEBAAABABAAAAAAAAQBAAAAABAAAAAAAAAiAAANwBAAAAAAAABSAAAEwBAAAAAAAAECAAAFwBAAAAAAAAESAAAJABAAAAAAAAEiAAAHABAAAAAAAAEyAAAIABAAAAAAAAICAAALwBAAAAAAAAMCAAAOgBAAAAAAAAAcAAADABAAAAAAAAEcAAACAAAAAAAAAAEsAAAEABAAAAAAAAENAAAAQAAAAAAAAA8AEAgBQCAAAAAAAA</bookmark>
+        </asset>
+        <effect id="r6" name="Lower Third DUAL - 2015" uid="~/Generators.localized/_TEMPLATE/NewsOK/Lower Third DUAL - 2015/Lower Third DUAL - 2015.motn" src="file:///Users/tfraser/Movies/Motion%20Templates.localized/Generators.localized/_TEMPLATE/NewsOK/Lower%20Third%20DUAL%20-%202015/Lower%20Third%20DUAL%20-%202015.motn"/>
+        <effect id="r7" name="Lower Third - 2015" uid="~/Generators.localized/_TEMPLATE/NewsOK/Lower Third - 2015/Lower Third - 2015.motn" src="file:///Users/tfraser/Movies/Motion%20Templates.localized/Generators.localized/_TEMPLATE/NewsOK/Lower%20Third%20-%202015/Lower%20Third%20-%202015.motn"/>
     </resources>
     <library location="file:///Users/tfraser/Downloads/Thunder%20XML%20Template/Thunder%20XML%20automation%20template.fcpbundle/">
-        <event name="20200213" uid="016E45C1-FDF6-42E0-9E47-0021900819">
-            
-                <project name="1610612760_Shai_Gilgeous-Alexander" uid="D08BE1A0-73F3-4CBF-9F40-1628983" modDate="2020-01-28 13:35:39 -0600">
-                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+        
+            <event name="Analysis" uid="4C7A9169-9A18-4B6B-8CB3-25860995599E">
+    <project name="Thunder at Pelicans" uid="EE2A8B99-C639-4E3A-A2C0-13E016479E10" modDate="2020-02-21 10:59:14 -0600">
+        <sequence duration="1591590/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+            <spine>
+                <gap name="Gap" offset="0s" duration="91091/30000s" start="107999892/30000s">
+                    <spine lane="1" offset="8999991/2500s">
+                        <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                            <filter-video ref="r3" name="Cross Dissolve">
+                                <param name="Look" key="1" value="11 (Video)"/>
+                                <param name="Amount" key="2" value="50"/>
+                                <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                <param name="Ease Amount" key="51" value="0"/>
+                            </filter-video>
+                            <filter-audio ref="r4" name="Audio Crossfade"/>
+                        </transition>
+                        <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="167167/30000s" start="108181073/30000s" audioRole="dialogue" tcFormat="NDF">
+                            <adjust-volume>
+                                <param name="amount">
+                                    <fadeIn type="easeIn" duration="161683/720000s"/>
+                                    <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                    <keyframeAnimation>
+                                        <keyframe time="2598301452/720000s" value="0dB"/>
+                                        <keyframe time="2599222655/720000s" value="-11dB"/>
+                                    </keyframeAnimation>
+                                </param>
+                            </adjust-volume>
+                        </asset-clip>
+                        <transition name="Cross Dissolve" offset="152152/30000s" duration="15015/30000s">
+                            <filter-video ref="r3" name="Cross Dissolve">
+                                <param name="Look" key="1" value="11 (Video)"/>
+                                <param name="Amount" key="2" value="50"/>
+                                <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                <param name="Ease Amount" key="51" value="0"/>
+                            </filter-video>
+                            <filter-audio ref="r4" name="Audio Crossfade"/>
+                        </transition>
+                    </spine>
+                </gap>
+                <gap name="Gap" offset="91091/30000s" duration="1342341/30000s" start="108113005/30000s">
+                    <video name="Lower Third DUAL - 2015" lane="1" offset="108200092/30000s" ref="r6" duration="720720/120000s" start="108108000/30000s">
+                        <param name="Position" key="9999/10223/10230/1/100/101" value="-536 -194"/>
+                        <param name="Text" key="9999/10223/10230/2/369" value="Maddie Lee"/>
+                        <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                        <param name="Text" key="9999/10223/10239/2/369" value="Reporting for The Oklahoman"/>
+                        <param name="Position" key="9999/10223/18281/1/100/101" value="438.543 -194"/>
+                        <param name="Alignment" key="9999/10223/18281/2/354/18282/401" value="2 (Right)"/>
+                        <param name="Text" key="9999/10223/18281/2/369" value="Joe Mussatto"/>
+                        <param name="Position" key="9999/10223/18409/1/100/101" value="383.809 -246"/>
+                        <param name="Alignment" key="9999/10223/18409/2/354/18410/401" value="2 (Right)"/>
+                        <param name="Text" key="9999/10223/18409/2/369" value=""/>
+                    </video>
+                    <video name="Lower Third - 2015" lane="1" offset="108380272/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                        <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                        <param name="Text" key="9999/10223/10230/2/369" value="Thunder 123, Pelicans 118"/>
+                        <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                        <param name="Text" key="9999/10223/10239/2/369" value="OKC 33-22"/>
+                    </video>
+                    <spine lane="1" offset="5472467/1500s">
+                        <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                            <filter-video ref="r3" name="Cross Dissolve">
+                                <param name="Look" key="1" value="11 (Video)"/>
+                                <param name="Amount" key="2" value="50"/>
+                                <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                <param name="Ease Amount" key="51" value="0"/>
+                            </filter-video>
+                            <filter-audio ref="r4" name="Audio Crossfade"/>
+                        </transition>
+                        <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
+                            <adjust-volume>
+                                <param name="amount">
+                                    <fadeIn type="easeIn" duration="161683/720000s"/>
+                                    <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                    <keyframeAnimation>
+                                        <keyframe time="2598301452/720000s" value="0dB"/>
+                                    </keyframeAnimation>
+                                </param>
+                            </adjust-volume>
+                        </asset-clip>
+                        <transition name="Cross Dissolve" offset="149149/30000s" duration="15015/30000s">
+                            <filter-video ref="r3" name="Cross Dissolve">
+                                <param name="Look" key="1" value="11 (Video)"/>
+                                <param name="Amount" key="2" value="50"/>
+                                <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                <param name="Ease Amount" key="51" value="0"/>
+                            </filter-video>
+                            <filter-audio ref="r4" name="Audio Crossfade"/>
+                        </transition>
+                    </spine>
+                </gap>
+            </spine>
+        </sequence>
+    </project>
+    <asset-clip name="Thunder Intro 2015" ref="r5" duration="240240/30000s" start="108108000/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" modDate="2020-02-21 10:50:55 -0600"/>
+</event>
+<event name="Pelicans" uid="016E45C1-FDF6-42E0-9E47-undefined">
+                <project name="Josh Hart" uid="D08BE1A0-73F3-4CBF-9F40-1628404" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="1689688/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
                         <spine>
-                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
-                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
-                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
-                                    <param name="Text" key="9999/10223/10230/2/369" value="Shai Gilgeous-Alexander"/>
-                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
-                                    <param name="Text" key="9999/10223/10239/2/369" value="17 PTS, 3 REB, 7 AST, 1 STL   6/14 FG  2/6 3PT"/>
-                                </video>
-                            </gap>
-                        </spine>
-                    </sequence>
-                </project>
-    
-                <project name="1610612760_Danilo_Gallinari" uid="D08BE1A0-73F3-4CBF-9F40-201568" modDate="2020-01-28 13:35:39 -0600">
-                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
-                        <spine>
-                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
-                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
-                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
-                                    <param name="Text" key="9999/10223/10230/2/369" value="Danilo Gallinari"/>
-                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
-                                    <param name="Text" key="9999/10223/10239/2/369" value="29 PTS, 2 REB, 1 AST, 2 STL   12/18 FG  3/5 3PT"/>
-                                </video>
-                            </gap>
-                        </spine>
-                    </sequence>
-                </project>
-    
-                <project name="1610612760_Steven_Adams" uid="D08BE1A0-73F3-4CBF-9F40-203500" modDate="2020-01-28 13:35:39 -0600">
-                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
-                        <spine>
-                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
-                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
-                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
-                                    <param name="Text" key="9999/10223/10230/2/369" value="Steven Adams"/>
-                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
-                                    <param name="Text" key="9999/10223/10239/2/369" value="11 PTS, 11 REB, 2 AST, 1 STL, 3 BLK   5/10 FG  1/1 3PT"/>
-                                </video>
-                            </gap>
-                        </spine>
-                    </sequence>
-                </project>
-    
-                <project name="1610612760_Luguentz_Dort" uid="D08BE1A0-73F3-4CBF-9F40-1629652" modDate="2020-01-28 13:35:39 -0600">
-                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
-                        <spine>
-                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
-                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
-                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
-                                    <param name="Text" key="9999/10223/10230/2/369" value="Luguentz Dort"/>
-                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
-                                    <param name="Text" key="9999/10223/10239/2/369" value="7 PTS, 3 REB, 1 STL   2/5 FG  1/3 3PT"/>
-                                </video>
-                            </gap>
-                        </spine>
-                    </sequence>
-                </project>
-    
-                <project name="1610612760_Chris_Paul" uid="D08BE1A0-73F3-4CBF-9F40-101108" modDate="2020-01-28 13:35:39 -0600">
-                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
-                        <spine>
-                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
-                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
-                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
-                                    <param name="Text" key="9999/10223/10230/2/369" value="Chris Paul"/>
-                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
-                                    <param name="Text" key="9999/10223/10239/2/369" value="14 PTS, 8 REB, 12 AST, 2 STL   5/12 FG  2/3 3PT"/>
-                                </video>
-                            </gap>
-                        </spine>
-                    </sequence>
-                </project>
-    
-                <project name="1610612760_Nerlens_Noel" uid="D08BE1A0-73F3-4CBF-9F40-203457" modDate="2020-01-28 13:35:39 -0600">
-                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
-                        <spine>
-                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
-                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
-                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
-                                    <param name="Text" key="9999/10223/10230/2/369" value="Nerlens Noel"/>
-                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
-                                    <param name="Text" key="9999/10223/10239/2/369" value="2 PTS, 3 REB   1/4 FG"/>
-                                </video>
-                            </gap>
-                        </spine>
-                    </sequence>
-                </project>
-    
-                <project name="1610612760_Dennis_Schroder" uid="D08BE1A0-73F3-4CBF-9F40-203471" modDate="2020-01-28 13:35:39 -0600">
-                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
-                        <spine>
-                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
-                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
-                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
-                                    <param name="Text" key="9999/10223/10230/2/369" value="Dennis Schroder"/>
-                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
-                                    <param name="Text" key="9999/10223/10239/2/369" value="22 PTS, 3 REB, 3 AST, 1 STL   7/16 FG  1/4 3PT"/>
-                                </video>
-                            </gap>
-                        </spine>
-                    </sequence>
-                </project>
-    
-                <project name="1610612760_Terrance_Ferguson" uid="D08BE1A0-73F3-4CBF-9F40-1628390" modDate="2020-01-28 13:35:39 -0600">
-                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
-                        <spine>
-                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
-                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
-                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
-                                    <param name="Text" key="9999/10223/10230/2/369" value="Terrance Ferguson"/>
-                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
-                                    <param name="Text" key="9999/10223/10239/2/369" value="3 PTS, 1 REB, 2 AST, 1 STL   1/2 FG  1/2 3PT"/>
-                                </video>
-                            </gap>
-                        </spine>
-                    </sequence>
-                </project>
-    
-                <project name="1610612760_Abdel_Nader" uid="D08BE1A0-73F3-4CBF-9F40-1627846" modDate="2020-01-28 13:35:39 -0600">
-                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
-                        <spine>
-                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
-                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
-                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
-                                    <param name="Text" key="9999/10223/10230/2/369" value="Abdel Nader"/>
-                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
-                                    <param name="Text" key="9999/10223/10239/2/369" value="8 PTS, 4 REB, 1 AST, 2 STL   3/7 FG  0/1 3PT"/>
-                                </video>
-                            </gap>
-                        </spine>
-                    </sequence>
-                </project>
-    
-                <project name="1610612760_Mike_Muscala" uid="D08BE1A0-73F3-4CBF-9F40-203488" modDate="2020-01-28 13:35:39 -0600">
-                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
-                        <spine>
-                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
-                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
-                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
-                                    <param name="Text" key="9999/10223/10230/2/369" value="Mike Muscala"/>
-                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
-                                    <param name="Text" key="9999/10223/10239/2/369" value="10 PTS, 2 REB, 2 BLK   4/4 FG  2/2 3PT"/>
-                                </video>
-                            </gap>
-                        </spine>
-                    </sequence>
-                </project>
-    
-                <project name="1610612740_Josh_Hart" uid="D08BE1A0-73F3-4CBF-9F40-1628404" modDate="2020-01-28 13:35:39 -0600">
-                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
-                        <spine>
-                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
-                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                            <video name="Custom" offset="0s" ref="r2" duration="98098/30000s" start="108108000/30000s">
+                                <spine lane="1" offset="18018/5s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="167167/30000s" start="108181073/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                    <keyframe time="2599222655/720000s" value="-11dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="152152/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </video>
+                            <gap name="Gap" offset="98098/30000s" duration="1433432/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="108083976/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
                                     <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
                                     <param name="Text" key="9999/10223/10230/2/369" value="Josh Hart"/>
                                     <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
                                     <param name="Text" key="9999/10223/10239/2/369" value="7 PTS, 8 REB, 3 AST   1/4 FG  1/4 3PT"/>
                                 </video>
+                                <video name="Lower Third - 2015" lane="1" offset="108266158/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Thunder 123, Pelicans 118"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="OKC 33-22"/>
+                                </video>
+                                <spine lane="1" offset="54713659/15000s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="149149/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
                             </gap>
+                            <video name="Custom" offset="1531530/30000s" ref="r2" duration="98098/30000s" start="108108000/30000s"/>
                         </spine>
                     </sequence>
                 </project>
     
-                <project name="1610612740_Zion_Williamson" uid="D08BE1A0-73F3-4CBF-9F40-1629627" modDate="2020-01-28 13:35:39 -0600">
-                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                <project name="Zion Williamson" uid="D08BE1A0-73F3-4CBF-9F40-1629627" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="1689688/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
                         <spine>
-                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
-                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                            <video name="Custom" offset="0s" ref="r2" duration="98098/30000s" start="108108000/30000s">
+                                <spine lane="1" offset="18018/5s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="167167/30000s" start="108181073/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                    <keyframe time="2599222655/720000s" value="-11dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="152152/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </video>
+                            <gap name="Gap" offset="98098/30000s" duration="1433432/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="108083976/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
                                     <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
                                     <param name="Text" key="9999/10223/10230/2/369" value="Zion Williamson"/>
                                     <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
                                     <param name="Text" key="9999/10223/10239/2/369" value="32 PTS, 6 REB, 1 AST, 1 BLK   11/19 FG  0/1 3PT"/>
                                 </video>
+                                <video name="Lower Third - 2015" lane="1" offset="108266158/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Thunder 123, Pelicans 118"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="OKC 33-22"/>
+                                </video>
+                                <spine lane="1" offset="54713659/15000s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="149149/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
                             </gap>
+                            <video name="Custom" offset="1531530/30000s" ref="r2" duration="98098/30000s" start="108108000/30000s"/>
                         </spine>
                     </sequence>
                 </project>
     
-                <project name="1610612740_Derrick_Favors" uid="D08BE1A0-73F3-4CBF-9F40-202324" modDate="2020-01-28 13:35:39 -0600">
-                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                <project name="Derrick Favors" uid="D08BE1A0-73F3-4CBF-9F40-202324" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="1689688/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
                         <spine>
-                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
-                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                            <video name="Custom" offset="0s" ref="r2" duration="98098/30000s" start="108108000/30000s">
+                                <spine lane="1" offset="18018/5s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="167167/30000s" start="108181073/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                    <keyframe time="2599222655/720000s" value="-11dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="152152/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </video>
+                            <gap name="Gap" offset="98098/30000s" duration="1433432/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="108083976/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
                                     <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
                                     <param name="Text" key="9999/10223/10230/2/369" value="Derrick Favors"/>
                                     <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
                                     <param name="Text" key="9999/10223/10239/2/369" value="8 PTS, 9 REB, 2 AST   4/8 FG"/>
                                 </video>
+                                <video name="Lower Third - 2015" lane="1" offset="108266158/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Thunder 123, Pelicans 118"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="OKC 33-22"/>
+                                </video>
+                                <spine lane="1" offset="54713659/15000s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="149149/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
                             </gap>
+                            <video name="Custom" offset="1531530/30000s" ref="r2" duration="98098/30000s" start="108108000/30000s"/>
                         </spine>
                     </sequence>
                 </project>
     
-                <project name="1610612740_Jrue_Holiday" uid="D08BE1A0-73F3-4CBF-9F40-201950" modDate="2020-01-28 13:35:39 -0600">
-                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                <project name="Jrue Holiday" uid="D08BE1A0-73F3-4CBF-9F40-201950" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="1689688/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
                         <spine>
-                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
-                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                            <video name="Custom" offset="0s" ref="r2" duration="98098/30000s" start="108108000/30000s">
+                                <spine lane="1" offset="18018/5s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="167167/30000s" start="108181073/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                    <keyframe time="2599222655/720000s" value="-11dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="152152/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </video>
+                            <gap name="Gap" offset="98098/30000s" duration="1433432/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="108083976/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
                                     <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
                                     <param name="Text" key="9999/10223/10230/2/369" value="Jrue Holiday"/>
                                     <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
                                     <param name="Text" key="9999/10223/10239/2/369" value="14 PTS, 6 REB, 11 AST   6/13 FG  1/3 3PT"/>
                                 </video>
+                                <video name="Lower Third - 2015" lane="1" offset="108266158/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Thunder 123, Pelicans 118"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="OKC 33-22"/>
+                                </video>
+                                <spine lane="1" offset="54713659/15000s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="149149/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
                             </gap>
+                            <video name="Custom" offset="1531530/30000s" ref="r2" duration="98098/30000s" start="108108000/30000s"/>
                         </spine>
                     </sequence>
                 </project>
     
-                <project name="1610612740_Lonzo_Ball" uid="D08BE1A0-73F3-4CBF-9F40-1628366" modDate="2020-01-28 13:35:39 -0600">
-                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                <project name="Lonzo Ball" uid="D08BE1A0-73F3-4CBF-9F40-1628366" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="1689688/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
                         <spine>
-                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
-                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                            <video name="Custom" offset="0s" ref="r2" duration="98098/30000s" start="108108000/30000s">
+                                <spine lane="1" offset="18018/5s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="167167/30000s" start="108181073/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                    <keyframe time="2599222655/720000s" value="-11dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="152152/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </video>
+                            <gap name="Gap" offset="98098/30000s" duration="1433432/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="108083976/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
                                     <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
                                     <param name="Text" key="9999/10223/10230/2/369" value="Lonzo Ball"/>
                                     <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
                                     <param name="Text" key="9999/10223/10239/2/369" value="16 PTS, 6 REB, 5 AST, 2 BLK   5/9 FG  5/8 3PT"/>
                                 </video>
+                                <video name="Lower Third - 2015" lane="1" offset="108266158/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Thunder 123, Pelicans 118"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="OKC 33-22"/>
+                                </video>
+                                <spine lane="1" offset="54713659/15000s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="149149/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
                             </gap>
+                            <video name="Custom" offset="1531530/30000s" ref="r2" duration="98098/30000s" start="108108000/30000s"/>
                         </spine>
                     </sequence>
                 </project>
     
-                <project name="1610612740_JJ_Redick" uid="D08BE1A0-73F3-4CBF-9F40-200755" modDate="2020-01-28 13:35:39 -0600">
-                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                <project name="JJ Redick" uid="D08BE1A0-73F3-4CBF-9F40-200755" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="1689688/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
                         <spine>
-                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
-                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                            <video name="Custom" offset="0s" ref="r2" duration="98098/30000s" start="108108000/30000s">
+                                <spine lane="1" offset="18018/5s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="167167/30000s" start="108181073/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                    <keyframe time="2599222655/720000s" value="-11dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="152152/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </video>
+                            <gap name="Gap" offset="98098/30000s" duration="1433432/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="108083976/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
                                     <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
                                     <param name="Text" key="9999/10223/10230/2/369" value="JJ Redick"/>
                                     <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
                                     <param name="Text" key="9999/10223/10239/2/369" value="24 PTS, 2 REB, 3 AST, 2 STL   8/19 FG  4/11 3PT"/>
                                 </video>
+                                <video name="Lower Third - 2015" lane="1" offset="108266158/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Thunder 123, Pelicans 118"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="OKC 33-22"/>
+                                </video>
+                                <spine lane="1" offset="54713659/15000s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="149149/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
                             </gap>
+                            <video name="Custom" offset="1531530/30000s" ref="r2" duration="98098/30000s" start="108108000/30000s"/>
                         </spine>
                     </sequence>
                 </project>
     
-                <project name="1610612740_Jaxson_Hayes" uid="D08BE1A0-73F3-4CBF-9F40-1629637" modDate="2020-01-28 13:35:39 -0600">
-                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                <project name="Jaxson Hayes" uid="D08BE1A0-73F3-4CBF-9F40-1629637" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="1689688/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
                         <spine>
-                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
-                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                            <video name="Custom" offset="0s" ref="r2" duration="98098/30000s" start="108108000/30000s">
+                                <spine lane="1" offset="18018/5s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="167167/30000s" start="108181073/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                    <keyframe time="2599222655/720000s" value="-11dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="152152/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </video>
+                            <gap name="Gap" offset="98098/30000s" duration="1433432/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="108083976/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
                                     <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
                                     <param name="Text" key="9999/10223/10230/2/369" value="Jaxson Hayes"/>
                                     <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
                                     <param name="Text" key="9999/10223/10239/2/369" value="4 PTS, 2 REB, 3 AST   2/2 FG"/>
                                 </video>
+                                <video name="Lower Third - 2015" lane="1" offset="108266158/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Thunder 123, Pelicans 118"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="OKC 33-22"/>
+                                </video>
+                                <spine lane="1" offset="54713659/15000s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="149149/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
                             </gap>
+                            <video name="Custom" offset="1531530/30000s" ref="r2" duration="98098/30000s" start="108108000/30000s"/>
                         </spine>
                     </sequence>
                 </project>
     
-                <project name="1610612740_E'Twaun_Moore" uid="D08BE1A0-73F3-4CBF-9F40-202734" modDate="2020-01-28 13:35:39 -0600">
-                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                <project name="E'Twaun Moore" uid="D08BE1A0-73F3-4CBF-9F40-202734" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="1689688/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
                         <spine>
-                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
-                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                            <video name="Custom" offset="0s" ref="r2" duration="98098/30000s" start="108108000/30000s">
+                                <spine lane="1" offset="18018/5s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="167167/30000s" start="108181073/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                    <keyframe time="2599222655/720000s" value="-11dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="152152/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </video>
+                            <gap name="Gap" offset="98098/30000s" duration="1433432/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="108083976/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
                                     <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
                                     <param name="Text" key="9999/10223/10230/2/369" value="E'Twaun Moore"/>
                                     <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
                                     <param name="Text" key="9999/10223/10239/2/369" value="2 PTS, 4 REB, 2 AST, 1 STL, 1 BLK   1/2 FG  0/1 3PT"/>
                                 </video>
+                                <video name="Lower Third - 2015" lane="1" offset="108266158/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Thunder 123, Pelicans 118"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="OKC 33-22"/>
+                                </video>
+                                <spine lane="1" offset="54713659/15000s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="149149/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
                             </gap>
+                            <video name="Custom" offset="1531530/30000s" ref="r2" duration="98098/30000s" start="108108000/30000s"/>
                         </spine>
                     </sequence>
                 </project>
     
-                <project name="1610612740_Nicolo_Melli" uid="D08BE1A0-73F3-4CBF-9F40-1629740" modDate="2020-01-28 13:35:39 -0600">
-                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                <project name="Nicolo Melli" uid="D08BE1A0-73F3-4CBF-9F40-1629740" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="1689688/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
                         <spine>
-                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
-                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                            <video name="Custom" offset="0s" ref="r2" duration="98098/30000s" start="108108000/30000s">
+                                <spine lane="1" offset="18018/5s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="167167/30000s" start="108181073/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                    <keyframe time="2599222655/720000s" value="-11dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="152152/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </video>
+                            <gap name="Gap" offset="98098/30000s" duration="1433432/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="108083976/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
                                     <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
                                     <param name="Text" key="9999/10223/10230/2/369" value="Nicolo Melli"/>
                                     <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
                                     <param name="Text" key="9999/10223/10239/2/369" value="6 PTS, 3 REB, 3 BLK   2/7 FG  2/5 3PT"/>
                                 </video>
+                                <video name="Lower Third - 2015" lane="1" offset="108266158/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Thunder 123, Pelicans 118"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="OKC 33-22"/>
+                                </video>
+                                <spine lane="1" offset="54713659/15000s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="149149/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
                             </gap>
+                            <video name="Custom" offset="1531530/30000s" ref="r2" duration="98098/30000s" start="108108000/30000s"/>
                         </spine>
                     </sequence>
                 </project>
     
-                <project name="1610612740_Frank_Jackson" uid="D08BE1A0-73F3-4CBF-9F40-1628402" modDate="2020-01-28 13:35:39 -0600">
-                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                <project name="Frank Jackson" uid="D08BE1A0-73F3-4CBF-9F40-1628402" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="1689688/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
                         <spine>
-                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
-                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                            <video name="Custom" offset="0s" ref="r2" duration="98098/30000s" start="108108000/30000s">
+                                <spine lane="1" offset="18018/5s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="167167/30000s" start="108181073/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                    <keyframe time="2599222655/720000s" value="-11dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="152152/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </video>
+                            <gap name="Gap" offset="98098/30000s" duration="1433432/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="108083976/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
                                     <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
                                     <param name="Text" key="9999/10223/10230/2/369" value="Frank Jackson"/>
                                     <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
                                     <param name="Text" key="9999/10223/10239/2/369" value="5 PTS, 1 AST   2/3 FG  1/2 3PT"/>
                                 </video>
+                                <video name="Lower Third - 2015" lane="1" offset="108266158/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Thunder 123, Pelicans 118"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="OKC 33-22"/>
+                                </video>
+                                <spine lane="1" offset="54713659/15000s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="149149/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
                             </gap>
+                            <video name="Custom" offset="1531530/30000s" ref="r2" duration="98098/30000s" start="108108000/30000s"/>
                         </spine>
                     </sequence>
                 </project>
     
-                <project name="1610612740_Brandon_Ingram" uid="D08BE1A0-73F3-4CBF-9F40-1627742" modDate="2020-01-28 13:35:39 -0600">
-                    <sequence duration="180180/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                <project name="Brandon Ingram" uid="D08BE1A0-73F3-4CBF-9F40-1627742" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="1689688/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
                         <spine>
-                            <gap name="Gap" offset="0s" duration="180180/30000s" start="107999892/30000s">
-                                <video name="Lower Third - 2015" lane="1" offset="107999892/30000s" ref="r2" duration="720720/120000s" start="108108000/30000s">
+                            <video name="Custom" offset="0s" ref="r2" duration="98098/30000s" start="108108000/30000s">
+                                <spine lane="1" offset="18018/5s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="167167/30000s" start="108181073/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                    <keyframe time="2599222655/720000s" value="-11dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="152152/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </video>
+                            <gap name="Gap" offset="98098/30000s" duration="1433432/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="108083976/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
                                     <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
                                     <param name="Text" key="9999/10223/10230/2/369" value="Brandon Ingram"/>
                                     <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
                                     <param name="Text" key="9999/10223/10239/2/369" value=""/>
                                 </video>
+                                <video name="Lower Third - 2015" lane="1" offset="108266158/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Thunder 123, Pelicans 118"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="OKC 33-22"/>
+                                </video>
+                                <spine lane="1" offset="54713659/15000s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="149149/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
                             </gap>
+                            <video name="Custom" offset="1531530/30000s" ref="r2" duration="98098/30000s" start="108108000/30000s"/>
+                        </spine>
+                    </sequence>
+                </project>
+     </event><event name="Thunder" uid="016E45C1-FDF6-42E0-9E47-undefined">
+                <project name="Shai Gilgeous-Alexander" uid="D08BE1A0-73F3-4CBF-9F40-1628983" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="1689688/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <video name="Custom" offset="0s" ref="r2" duration="98098/30000s" start="108108000/30000s">
+                                <spine lane="1" offset="18018/5s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="167167/30000s" start="108181073/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                    <keyframe time="2599222655/720000s" value="-11dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="152152/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </video>
+                            <gap name="Gap" offset="98098/30000s" duration="1433432/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="108083976/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Shai Gilgeous-Alexander"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="17 PTS, 3 REB, 7 AST, 1 STL   6/14 FG  2/6 3PT"/>
+                                </video>
+                                <video name="Lower Third - 2015" lane="1" offset="108266158/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Thunder 123, Pelicans 118"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="OKC 33-22"/>
+                                </video>
+                                <spine lane="1" offset="54713659/15000s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="149149/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </gap>
+                            <video name="Custom" offset="1531530/30000s" ref="r2" duration="98098/30000s" start="108108000/30000s"/>
                         </spine>
                     </sequence>
                 </project>
     
-    </event>
+                <project name="Danilo Gallinari" uid="D08BE1A0-73F3-4CBF-9F40-201568" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="1689688/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <video name="Custom" offset="0s" ref="r2" duration="98098/30000s" start="108108000/30000s">
+                                <spine lane="1" offset="18018/5s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="167167/30000s" start="108181073/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                    <keyframe time="2599222655/720000s" value="-11dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="152152/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </video>
+                            <gap name="Gap" offset="98098/30000s" duration="1433432/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="108083976/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Danilo Gallinari"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="29 PTS, 2 REB, 1 AST, 2 STL   12/18 FG  3/5 3PT"/>
+                                </video>
+                                <video name="Lower Third - 2015" lane="1" offset="108266158/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Thunder 123, Pelicans 118"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="OKC 33-22"/>
+                                </video>
+                                <spine lane="1" offset="54713659/15000s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="149149/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </gap>
+                            <video name="Custom" offset="1531530/30000s" ref="r2" duration="98098/30000s" start="108108000/30000s"/>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="Steven Adams" uid="D08BE1A0-73F3-4CBF-9F40-203500" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="1689688/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <video name="Custom" offset="0s" ref="r2" duration="98098/30000s" start="108108000/30000s">
+                                <spine lane="1" offset="18018/5s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="167167/30000s" start="108181073/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                    <keyframe time="2599222655/720000s" value="-11dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="152152/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </video>
+                            <gap name="Gap" offset="98098/30000s" duration="1433432/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="108083976/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Steven Adams"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="11 PTS, 11 REB, 2 AST, 1 STL, 3 BLK   5/10 FG  1/1 3PT"/>
+                                </video>
+                                <video name="Lower Third - 2015" lane="1" offset="108266158/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Thunder 123, Pelicans 118"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="OKC 33-22"/>
+                                </video>
+                                <spine lane="1" offset="54713659/15000s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="149149/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </gap>
+                            <video name="Custom" offset="1531530/30000s" ref="r2" duration="98098/30000s" start="108108000/30000s"/>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="Luguentz Dort" uid="D08BE1A0-73F3-4CBF-9F40-1629652" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="1689688/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <video name="Custom" offset="0s" ref="r2" duration="98098/30000s" start="108108000/30000s">
+                                <spine lane="1" offset="18018/5s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="167167/30000s" start="108181073/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                    <keyframe time="2599222655/720000s" value="-11dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="152152/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </video>
+                            <gap name="Gap" offset="98098/30000s" duration="1433432/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="108083976/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Luguentz Dort"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="7 PTS, 3 REB, 1 STL   2/5 FG  1/3 3PT"/>
+                                </video>
+                                <video name="Lower Third - 2015" lane="1" offset="108266158/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Thunder 123, Pelicans 118"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="OKC 33-22"/>
+                                </video>
+                                <spine lane="1" offset="54713659/15000s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="149149/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </gap>
+                            <video name="Custom" offset="1531530/30000s" ref="r2" duration="98098/30000s" start="108108000/30000s"/>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="Chris Paul" uid="D08BE1A0-73F3-4CBF-9F40-101108" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="1689688/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <video name="Custom" offset="0s" ref="r2" duration="98098/30000s" start="108108000/30000s">
+                                <spine lane="1" offset="18018/5s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="167167/30000s" start="108181073/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                    <keyframe time="2599222655/720000s" value="-11dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="152152/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </video>
+                            <gap name="Gap" offset="98098/30000s" duration="1433432/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="108083976/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Chris Paul"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="14 PTS, 8 REB, 12 AST, 2 STL   5/12 FG  2/3 3PT"/>
+                                </video>
+                                <video name="Lower Third - 2015" lane="1" offset="108266158/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Thunder 123, Pelicans 118"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="OKC 33-22"/>
+                                </video>
+                                <spine lane="1" offset="54713659/15000s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="149149/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </gap>
+                            <video name="Custom" offset="1531530/30000s" ref="r2" duration="98098/30000s" start="108108000/30000s"/>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="Nerlens Noel" uid="D08BE1A0-73F3-4CBF-9F40-203457" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="1689688/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <video name="Custom" offset="0s" ref="r2" duration="98098/30000s" start="108108000/30000s">
+                                <spine lane="1" offset="18018/5s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="167167/30000s" start="108181073/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                    <keyframe time="2599222655/720000s" value="-11dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="152152/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </video>
+                            <gap name="Gap" offset="98098/30000s" duration="1433432/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="108083976/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Nerlens Noel"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="2 PTS, 3 REB   1/4 FG"/>
+                                </video>
+                                <video name="Lower Third - 2015" lane="1" offset="108266158/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Thunder 123, Pelicans 118"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="OKC 33-22"/>
+                                </video>
+                                <spine lane="1" offset="54713659/15000s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="149149/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </gap>
+                            <video name="Custom" offset="1531530/30000s" ref="r2" duration="98098/30000s" start="108108000/30000s"/>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="Dennis Schroder" uid="D08BE1A0-73F3-4CBF-9F40-203471" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="1689688/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <video name="Custom" offset="0s" ref="r2" duration="98098/30000s" start="108108000/30000s">
+                                <spine lane="1" offset="18018/5s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="167167/30000s" start="108181073/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                    <keyframe time="2599222655/720000s" value="-11dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="152152/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </video>
+                            <gap name="Gap" offset="98098/30000s" duration="1433432/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="108083976/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Dennis Schroder"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="22 PTS, 3 REB, 3 AST, 1 STL   7/16 FG  1/4 3PT"/>
+                                </video>
+                                <video name="Lower Third - 2015" lane="1" offset="108266158/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Thunder 123, Pelicans 118"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="OKC 33-22"/>
+                                </video>
+                                <spine lane="1" offset="54713659/15000s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="149149/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </gap>
+                            <video name="Custom" offset="1531530/30000s" ref="r2" duration="98098/30000s" start="108108000/30000s"/>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="Terrance Ferguson" uid="D08BE1A0-73F3-4CBF-9F40-1628390" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="1689688/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <video name="Custom" offset="0s" ref="r2" duration="98098/30000s" start="108108000/30000s">
+                                <spine lane="1" offset="18018/5s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="167167/30000s" start="108181073/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                    <keyframe time="2599222655/720000s" value="-11dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="152152/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </video>
+                            <gap name="Gap" offset="98098/30000s" duration="1433432/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="108083976/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Terrance Ferguson"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="3 PTS, 1 REB, 2 AST, 1 STL   1/2 FG  1/2 3PT"/>
+                                </video>
+                                <video name="Lower Third - 2015" lane="1" offset="108266158/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Thunder 123, Pelicans 118"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="OKC 33-22"/>
+                                </video>
+                                <spine lane="1" offset="54713659/15000s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="149149/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </gap>
+                            <video name="Custom" offset="1531530/30000s" ref="r2" duration="98098/30000s" start="108108000/30000s"/>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="Abdel Nader" uid="D08BE1A0-73F3-4CBF-9F40-1627846" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="1689688/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <video name="Custom" offset="0s" ref="r2" duration="98098/30000s" start="108108000/30000s">
+                                <spine lane="1" offset="18018/5s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="167167/30000s" start="108181073/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                    <keyframe time="2599222655/720000s" value="-11dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="152152/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </video>
+                            <gap name="Gap" offset="98098/30000s" duration="1433432/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="108083976/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Abdel Nader"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="8 PTS, 4 REB, 1 AST, 2 STL   3/7 FG  0/1 3PT"/>
+                                </video>
+                                <video name="Lower Third - 2015" lane="1" offset="108266158/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Thunder 123, Pelicans 118"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="OKC 33-22"/>
+                                </video>
+                                <spine lane="1" offset="54713659/15000s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="149149/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </gap>
+                            <video name="Custom" offset="1531530/30000s" ref="r2" duration="98098/30000s" start="108108000/30000s"/>
+                        </spine>
+                    </sequence>
+                </project>
+    
+                <project name="Mike Muscala" uid="D08BE1A0-73F3-4CBF-9F40-203488" modDate="2020-01-28 13:35:39 -0600">
+                    <sequence duration="1689688/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                        <spine>
+                            <video name="Custom" offset="0s" ref="r2" duration="98098/30000s" start="108108000/30000s">
+                                <spine lane="1" offset="18018/5s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="167167/30000s" start="108181073/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                    <keyframe time="2599222655/720000s" value="-11dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="152152/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </video>
+                            <gap name="Gap" offset="98098/30000s" duration="1433432/30000s" start="107999892/30000s">
+                                <video name="Lower Third - 2015" lane="1" offset="108083976/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Mike Muscala"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="10 PTS, 2 REB, 2 BLK   4/4 FG  2/2 3PT"/>
+                                </video>
+                                <video name="Lower Third - 2015" lane="1" offset="108266158/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                                    <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
+                                    <param name="Text" key="9999/10223/10230/2/369" value="Thunder 123, Pelicans 118"/>
+                                    <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
+                                    <param name="Text" key="9999/10223/10239/2/369" value="OKC 33-22"/>
+                                </video>
+                                <spine lane="1" offset="54713659/15000s">
+                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
+                                        <adjust-volume>
+                                            <param name="amount">
+                                                <fadeIn type="easeIn" duration="161683/720000s"/>
+                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                                <keyframeAnimation>
+                                                    <keyframe time="2598301452/720000s" value="0dB"/>
+                                                </keyframeAnimation>
+                                            </param>
+                                        </adjust-volume>
+                                    </asset-clip>
+                                    <transition name="Cross Dissolve" offset="149149/30000s" duration="15015/30000s">
+                                        <filter-video ref="r3" name="Cross Dissolve">
+                                            <param name="Look" key="1" value="11 (Video)"/>
+                                            <param name="Amount" key="2" value="50"/>
+                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                            <param name="Ease Amount" key="51" value="0"/>
+                                        </filter-video>
+                                        <filter-audio ref="r4" name="Audio Crossfade"/>
+                                    </transition>
+                                </spine>
+                            </gap>
+                            <video name="Custom" offset="1531530/30000s" ref="r2" duration="98098/30000s" start="108108000/30000s"/>
+                        </spine>
+                    </sequence>
+                </project>
+     </event>
     </library>
     </fcpxml>

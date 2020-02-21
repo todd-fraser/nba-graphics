@@ -10,8 +10,10 @@ const fs = require('fs');
     // "isHomeTeam": false,
     // "home": "Pelicans",
     // "homeCity": "New Orleans",
+    // "homeId": "342134123"
     // "visitor": "Thunder",
     // "visitorCity": "Oklahoma City",
+    // "homeId": "346534123"
     // "tip": 1400,
     // "tipString": "7:00 PM"
     
@@ -26,7 +28,7 @@ today.gameProcessed = false
 
 //set today to today
 today.date = new Date().toISOString().slice(0,10).replace(/-/g,""); 
-// today.date = 20200213 //DEV override the date
+today.date = 20200213 //DEV override the date
 
 let feedURL = `http://data.nba.net/5s/json/cms/noseason/scoreboard/${today.date}/games.json`
 // let feedURL = `http://127.0.0.1:5500/downloadedJSON/${today.date}_schedule.json`
@@ -51,6 +53,12 @@ request(feedURL, (error, response, html) => {
                     today.playToday = true;
                     game = data.sports_content.games.game[i]
                     today.gameId = game.id
+                    today.home = game.home.nickname
+                    today.homeCity = game.home.city
+                    today.homeId = game.home.id
+                    today.visitor = game.visitor.nickname
+                    today.visitorCity = game.visitor.city
+                    today.visitorId = game.visitor.id
                     if (game.home.nickname === today.myTeam){
                         setHomeGame();
                     } else {
@@ -86,10 +94,12 @@ request(feedURL, (error, response, html) => {
 
 function setHomeGame() {
     today.isHomeTeam = true;
-    today.home = game.home.nickname
-    today.homeCity = game.home.city
-    today.visitor = game.visitor.nickname
-    today.visitorCity = game.visitor.city
+    // today.home = game.home.nickname
+    // today.homeCity = game.home.city
+    // today.homeId = game.home.id
+    // today.visitor = game.visitor.nickname
+    // today.visitorCity = game.visitor.city
+    // today.visitorId = game.visitor.id
     today.tip = parseInt(game.home_start_time)
     today.tipString = formatTipTime(game.home_start_time);
 
@@ -97,10 +107,12 @@ function setHomeGame() {
 
 function setVisitorGame() {
     today.isHomeTeam = false;
-    today.home = game.home.nickname
-    today.homeCity = game.home.city
-    today.visitor = game.visitor.nickname
-    today.visitorCity = game.visitor.city
+    // today.home = game.home.nickname
+    // today.homeCity = game.home.city
+    // today.homeId = game.home.id
+    // today.visitor = game.visitor.nickname
+    // today.visitorCity = game.visitor.city
+    // today.visitorId = game.visitor.id
     today.tip = parseInt(game.visitor_start_time)
     today.tipString = formatTipTime(game.visitor_start_time);
 };
