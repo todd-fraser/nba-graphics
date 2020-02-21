@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+
+<fcpxml version="1.6">
+    <resources>
+        <format id="r1" name="FFVideoFormat720p2997" frameDuration="1001/30000s" width="1280" height="720"/>
+        <effect id="r2" name="Lower Third - 2015" uid="~/Generators.localized/_TEMPLATE/NewsOK/Lower Third - 2015/Lower Third - 2015.motn" src="file:///Users/tfraser/Movies/Motion%20Templates.localized/Generators.localized/_TEMPLATE/NewsOK/Lower%20Third%20-%202015/Lower%20Third%20-%202015.motn"/>
+    </resources>
+    <library location="file:///Users/tfraser/Downloads/Thunder%20XML%20Template/Thunder%20XML%20automation%20template.fcpbundle/">
+        <event name="20200221" uid="016E45C1-FDF6-42E0-9E47-0021900831">
+            

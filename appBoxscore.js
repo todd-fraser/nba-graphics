@@ -1,6 +1,6 @@
 const request = require('request');
 const fs = require('fs');
-const moment = require('moment');
+// const moment = require('moment');
 const nodemailer = require("nodemailer");
 
 require('dotenv').config();
@@ -11,18 +11,25 @@ const today = JSON.parse(data);
 
 // console.log(`INPUT JSON \n${data}`);
 
-let hoursNow = parseInt(moment().hours());  //get time in hh format to match tip time
+//  ### removed moment dependency
+// let hoursNow = parseInt(moment().hours());  //get time in hh format to match tip time
 
-// ### probable way to remove moment dependency
-// var date = new Date(); //Get current time
-// var hour = date.getHours(); //Get current hour - returns two digit hour
+// ### native solution to get hours
+let date = new Date(); //Get current time
+let hoursNow = date.getHours(); //Get current hour - returns two digit hour
+// hoursNow = 20  //dev override
+
+console.log(`hoursNow: `);
+console.log(hoursNow);
+console.log(`(today.tip+200)/100: `);
+console.log((today.tip+200)/100);
 
 
-if (today.playToday && (today.tip+200)/100 < hoursNow  && today.gameProcessed != true) {
+if (today.playToday && (today.tip+200)/100 <= hoursNow  && today.gameProcessed != true) {
     console.log(`It's at least two hours after tip, pulling boxscore`);
     getBoxscore();
 } else if (today.playToday && (today.tip+200)/100 > hoursNow) {
-    console.log(`### ${today.myTeam} GAME TODAY, but the it's probably is not over yet`);
+    console.log(`### ${today.myTeam} GAME TODAY, boxscore not pulled until Tip + 2 Hours`);
 } else if (!today.playToday) {
     // console.log(`### ${today.myTeam} do not play today`);
 }
