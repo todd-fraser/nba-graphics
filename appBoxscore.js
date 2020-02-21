@@ -223,10 +223,10 @@ function writeXMLHeader() {
 function writeAnalysisXML() {
   let analysisXML = `<event name="Analysis" uid="4C7A9169-9A18-4B6B-8CB3-25860995599E">
     <project name="${today.visitor} at ${today.home}" uid="EE2A8B99-C639-4E3A-A2C0-13E016479E10" modDate="2020-02-21 10:59:14 -0600">
-        <sequence duration="1591590/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+        <sequence duration="1596595/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
             <spine>
-                <gap name="Gap" offset="0s" duration="91091/30000s" start="107999892/30000s">
-                    <spine lane="1" offset="8999991/2500s">
+                <video name="Custom" offset="0s" ref="r2" duration="98098/30000s" start="108108000/30000s">
+                    <spine lane="1" offset="18018/5s">
                         <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
                             <filter-video ref="r3" name="Cross Dissolve">
                                 <param name="Look" key="1" value="11 (Video)"/>
@@ -258,63 +258,52 @@ function writeAnalysisXML() {
                             <filter-audio ref="r4" name="Audio Crossfade"/>
                         </transition>
                     </spine>
-                </gap>
-                <gap name="Gap" offset="91091/30000s" duration="1342341/30000s" start="108113005/30000s">
-                    <video name="Lower Third DUAL - 2015" lane="1" offset="108200092/30000s" ref="r6" duration="720720/120000s" start="108108000/30000s">
+                </video>
+                <gap name="Gap" offset="98098/30000s" duration="1334333/30000s" start="107999892/30000s">
+                    <video name="Lower Third DUAL - 2015" lane="1" offset="108079972/30000s" ref="r6" duration="720720/120000s" start="108108000/30000s">
                         <param name="Position" key="9999/10223/10230/1/100/101" value="-536 -194"/>
                         <param name="Text" key="9999/10223/10230/2/369" value="${config.reporter1}"/>
                         <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
                         <param name="Text" key="9999/10223/10239/2/369" value="Reporting for The Oklahoman"/>
                         <param name="Position" key="9999/10223/18281/1/100/101" value="438.543 -194"/>
-                        <param name="Alignment" key="9999/10223/18281/2/354/18282/401" value="2 (Right)"/>
+                        <param name="Alignment" key="9999/10223/18281/2/354/3000202077/401" value="2 (Right)"/>
                         <param name="Text" key="9999/10223/18281/2/369" value="${config.reporter2}"/>
                         <param name="Position" key="9999/10223/18409/1/100/101" value="383.809 -246"/>
                         <param name="Alignment" key="9999/10223/18409/2/354/18410/401" value="2 (Right)"/>
                         <param name="Text" key="9999/10223/18409/2/369" value=""/>
                     </video>
-                    <video name="Lower Third - 2015" lane="1" offset="108380272/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
+                    <video name="Lower Third - 2015" lane="1" offset="108260152/30000s" ref="r7" duration="720720/120000s" start="108108000/30000s">
                         <param name="Position" key="9999/10223/10230/1/100/101" value="-536.154 -194"/>
                         <param name="Text" key="9999/10223/10230/2/369" value="${today.visitor} ${today.visitorScore}, ${today.home} ${today.homeScore}"/>
                         <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
                         <param name="Text" key="9999/10223/10239/2/369" value="${myTeamRecord}"/>
                     </video>
-                    <spine lane="1" offset="5472467/1500s">
-                        <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
-                            <filter-video ref="r3" name="Cross Dissolve">
-                                <param name="Look" key="1" value="11 (Video)"/>
-                                <param name="Amount" key="2" value="50"/>
-                                <param name="Ease" key="50" value="2 (In &amp; Out)"/>
-                                <param name="Ease Amount" key="51" value="0"/>
-                            </filter-video>
-                            <filter-audio ref="r4" name="Audio Crossfade"/>
-                        </transition>
-                        <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
-                            <adjust-volume>
-                                <param name="amount">
-                                    <fadeIn type="easeIn" duration="161683/720000s"/>
-                                    <fadeOut type="easeIn" duration="1071384/720000s"/>
-                                    <keyframeAnimation>
-                                        <keyframe time="2598301452/720000s" value="0dB"/>
-                                    </keyframeAnimation>
-                                </param>
-                            </adjust-volume>
-                        </asset-clip>
-                        <transition name="Cross Dissolve" offset="149149/30000s" duration="15015/30000s">
-                            <filter-video ref="r3" name="Cross Dissolve">
-                                <param name="Look" key="1" value="11 (Video)"/>
-                                <param name="Amount" key="2" value="50"/>
-                                <param name="Ease" key="50" value="2 (In &amp; Out)"/>
-                                <param name="Ease Amount" key="51" value="0"/>
-                            </filter-video>
-                            <filter-audio ref="r4" name="Audio Crossfade"/>
-                        </transition>
-                    </spine>
                 </gap>
+                <asset-clip name="Thunder Intro 2015" offset="1432431/30000s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
+                    <adjust-volume>
+                        <param name="amount">
+                            <fadeIn type="easeIn" duration="161683/720000s"/>
+                            <fadeOut type="easeIn" duration="1071384/720000s"/>
+                            <keyframeAnimation>
+                                <keyframe time="2598301452/720000s" value="0dB" curve="linear"/>
+                            </keyframeAnimation>
+                        </param>
+                    </adjust-volume>
+                </asset-clip>
+                <transition name="Cross Dissolve" offset="1581580/30000s" duration="15015/30000s">
+                    <filter-video ref="r3" name="Cross Dissolve">
+                        <param name="Look" key="1" value="11 (Video)"/>
+                        <param name="Amount" key="2" value="50"/>
+                        <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                        <param name="Ease Amount" key="51" value="0"/>
+                    </filter-video>
+                    <filter-audio ref="r4" name="Audio Crossfade"/>
+                </transition>
             </spine>
         </sequence>
-    </project>
-    <asset-clip name="Thunder Intro 2015" ref="r5" duration="240240/30000s" start="108108000/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" modDate="2020-02-21 10:50:55 -0600"/>
-</event>
+        </project>
+        <asset-clip name="Thunder Intro 2015" ref="r5" duration="240240/30000s" start="108108000/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" modDate="2020-02-21 10:50:55 -0600"/>
+        </event>
 `;
   fs.appendFileSync(
     `./output/FCPXML/${today.date}.fcpxml`,
@@ -327,10 +316,10 @@ function writeAnalysisXML() {
 }
 
 function writePlayerStats(stats) {
-    let visitorStatsXML = `<event name="${today.visitor}" uid="016E45C1-FDF6-42E0-9E47-${stats.vTeam.teamId}">`
-    let homeStatsXML = `<event name="${today.home}" uid="016E45C1-FDF6-42E0-9E47-${stats.hTeam.teamId}">`
+  let visitorStatsXML = `<event name="${today.visitor}" uid="016E45C1-FDF6-42E0-9E47-${stats.vTeam.teamId}">`;
+  let homeStatsXML = `<event name="${today.home}" uid="016E45C1-FDF6-42E0-9E47-${stats.hTeam.teamId}">`;
   stats.activePlayers.forEach(player => {
-      console.log(player.min);
+    console.log(player.min);
     if (player.min != "0:00") {
       let statLine = "";
       if (player.points > 0) {
@@ -359,7 +348,7 @@ function writePlayerStats(stats) {
 
       let playerStats = `
                 <project name="${player.firstName} ${player.lastName}" uid="D08BE1A0-73F3-4CBF-9F40-${player.personId}" modDate="2020-01-28 13:35:39 -0600">
-                    <sequence duration="1689688/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                    <sequence duration="1695694/30000s" format="r1" renderColorSpace="Rec. 709" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
                         <spine>
                             <video name="Custom" offset="0s" ref="r2" duration="98098/30000s" start="108108000/30000s">
                                 <spine lane="1" offset="18018/5s">
@@ -408,50 +397,38 @@ function writePlayerStats(stats) {
                                     <param name="Position" key="9999/10223/10239/1/100/101" value="-502.25 -246"/>
                                     <param name="Text" key="9999/10223/10239/2/369" value="${myTeamRecord}"/>
                                 </video>
-                                <spine lane="1" offset="54713659/15000s">
-                                    <transition name="Cross Dissolve" offset="0s" duration="5005/30000s">
-                                        <filter-video ref="r3" name="Cross Dissolve">
-                                            <param name="Look" key="1" value="11 (Video)"/>
-                                            <param name="Amount" key="2" value="50"/>
-                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
-                                            <param name="Ease Amount" key="51" value="0"/>
-                                        </filter-video>
-                                        <filter-audio ref="r4" name="Audio Crossfade"/>
-                                    </transition>
-                                    <asset-clip name="Thunder Intro 2015" offset="0s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
-                                        <adjust-volume>
-                                            <param name="amount">
-                                                <fadeIn type="easeIn" duration="161683/720000s"/>
-                                                <fadeOut type="easeIn" duration="1071384/720000s"/>
-                                                <keyframeAnimation>
-                                                    <keyframe time="2598301452/720000s" value="0dB"/>
-                                                </keyframeAnimation>
-                                            </param>
-                                        </adjust-volume>
-                                    </asset-clip>
-                                    <transition name="Cross Dissolve" offset="149149/30000s" duration="15015/30000s">
-                                        <filter-video ref="r3" name="Cross Dissolve">
-                                            <param name="Look" key="1" value="11 (Video)"/>
-                                            <param name="Amount" key="2" value="50"/>
-                                            <param name="Ease" key="50" value="2 (In &amp; Out)"/>
-                                            <param name="Ease Amount" key="51" value="0"/>
-                                        </filter-video>
-                                        <filter-audio ref="r4" name="Audio Crossfade"/>
-                                    </transition>
-                                </spine>
                             </gap>
-                            <video name="Custom" offset="1531530/30000s" ref="r2" duration="98098/30000s" start="108108000/30000s"/>
+                            <asset-clip name="Thunder Intro 2015" offset="1531530/30000s" ref="r5" duration="164164/30000s" start="108184076/30000s" audioRole="dialogue" tcFormat="NDF">
+                                <adjust-volume>
+                                    <param name="amount">
+                                        <fadeIn type="easeIn" duration="161683/720000s"/>
+                                        <fadeOut type="easeIn" duration="1071384/720000s"/>
+                                        <keyframeAnimation>
+                                            <keyframe time="2598301452/720000s" value="0dB" curve="linear"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                </adjust-volume>
+                            </asset-clip>
+                            <transition name="Cross Dissolve" offset="1680679/30000s" duration="15015/30000s">
+                                <filter-video ref="r3" name="Cross Dissolve">
+                                    <param name="Look" key="1" value="11 (Video)"/>
+                                    <param name="Amount" key="2" value="50"/>
+                                    <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                    <param name="Ease Amount" key="51" value="0"/>
+                                </filter-video>
+                                <filter-audio ref="r4" name="Audio Crossfade"/>
+                            </transition>
                         </spine>
                     </sequence>
                 </project>
+                               
     `;
 
-      if (player.teamId != today.homeId){
-        visitorStatsXML += playerStats
+      if (player.teamId != today.homeId) {
+        visitorStatsXML += playerStats;
       } else {
-        homeStatsXML += playerStats
+        homeStatsXML += playerStats;
       }
-
     } else {
       console.log("Did not play");
     }
@@ -474,7 +451,6 @@ function writePlayerStats(stats) {
       console.log("Player stats written to file");
     }
   );
-
 }
 
 function writeXMLFooter() {
