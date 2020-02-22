@@ -28,7 +28,7 @@ today.gameProcessed = false
 
 //set today to today
 today.date = new Date().toISOString().slice(0,10).replace(/-/g,""); 
-// today.date = 20200213 //DEV override the date
+// today.date = 20200221 //DEV override the date
 
 let feedURL = `http://data.nba.net/5s/json/cms/noseason/scoreboard/${today.date}/games.json`
 // let feedURL = `http://127.0.0.1:5500/downloadedJSON/${today.date}_schedule.json`

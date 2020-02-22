@@ -25,15 +25,15 @@ let hoursNow = date.getHours(); //Get current hour - returns two digit hour
 
 console.log(`hoursNow: `);
 console.log(hoursNow);
-console.log(`(today.tip+200)/100: `);
-console.log((today.tip + 200) / 100);
+console.log(`(today.tip+300)/100: `);
+console.log((today.tip + 300) / 100);
 
 if (
   today.playToday &&
-  (today.tip + 200) / 100 <= hoursNow &&
+  (today.tip + 300) / 100 <= hoursNow &&
   today.gameProcessed != true
 ) {
-  console.log(`It's at least two hours after tip, pulling boxscore`);
+  console.log(`It's at least three hours after tip, pulling boxscore`);
   getBoxscore();
 } else if (today.playToday && (today.tip + 200) / 100 > hoursNow) {
   console.log(
