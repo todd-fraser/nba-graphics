@@ -12,6 +12,10 @@ let configData = fs.readFileSync("./output/config.json");
 const config = JSON.parse(configData);
 
 let myTeamRecord;
+let emailHTML = `<h5>FCP XML attached, stat lines for active players
+<br>
+
+</h5>`;
 
 // console.log(`INPUT JSON \n${data}`);
 
@@ -97,7 +101,10 @@ function getBoxscore() {
         to: config.users, // list of receivers
         subject: process.env.SUBJECT, // Subject line
         text: "FCP Graphics for tonight's Game", // plain text body
-        html: "<div><b>FCP Graphics for tonight's Game</b></div>", // html body
+        // html: "<div><b>FCP Graphics for tonight's Game</b></div>", // html body
+        html: `${today.visitor} at ${today.home}
+        <br>
+        ${date}<br>${emailHTML}`, // html body
         attachments: [
           {
             filename: "FCPXML.fcpxml",
@@ -345,6 +352,12 @@ function writePlayerStats(stats) {
       }
 
       console.log(statLine);
+
+      emailHTML += `<div style='padding=20px;'><strong>${player.firstName} ${player.lastName}</strong>
+        <br>
+        ${statLine}
+        <br><br></div>`
+    
 
       let playerStats = `
                 <project name="${player.firstName} ${player.lastName}" uid="D08BE1A0-73F3-4CBF-9F40-${player.personId}" modDate="2020-01-28 13:35:39 -0600">
